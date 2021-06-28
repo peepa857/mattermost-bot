@@ -20,7 +20,7 @@ def bot_reply():
     }
 
     reply_data = {
-        "channel_id": "CHANNEL_ID",
+        "channel_id": CHANNEL_ID,
         "message": f"@{posted_user} Bot reply message.",
         "props": {
             "attachments": [{
