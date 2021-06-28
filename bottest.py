@@ -30,7 +30,7 @@ def bot_reply():
         },
     }
 
-    reply_request = requests.post(MM_API_ADDRESS,
+    reply_request = requests.post(url=MM_API_ADDRESS,
                                   headers=reply_headers,
                                   data=json.dumps(reply_data))
 
