@@ -1,10 +1,10 @@
 const request = require("request");
 var headers = {
   "Content-Type": "application/json",
-  Authorization: "Bearer ecp785yaab8u5rtxsxuzdokwae",
+  Authorization: "Bearer {BOT_TOKEN}",
 };
 var dataString =
-  '{"channel_id":"snxudatqktnk5k74o5g6t3fbuo", "message":"This is a message from a bot", "props":{"attachments": [{"pretext": "Look some text","text": "This is text"}]}}';
+  '{"channel_id":"{CHANNEL_ID}", "message":"This is a message from a bot", "props":{"attachments": [{"pretext": "Look some text","text": "This is text"}]}}';
 var options = {
   url: "http://localhost:8065/api/v4/posts",
   method: "POST",
