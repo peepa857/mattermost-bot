@@ -11,6 +11,7 @@ app = Flask(__name__)
 
 @app.route('/bot-test', methods=['POST'])  # 外向きのWebhookのコールバックURL
 def bot_reply():
+    print(request.json)
     posted_user = request.json['user_name']
     posted_msg = request.json['text']
 
